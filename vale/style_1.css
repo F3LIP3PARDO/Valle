@@ -1,0 +1,137 @@
+* {
+    margin: 10;
+    padding: 15;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background: #16314b;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 30vh;
+    background: #16314b;
+}
+
+.contenedor-titulo {
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position:center ;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/Captura\ de\ pantalla\ 2023-01-23\ 235209.png);
+}
+
+.contenedor-titulo h1 {
+    font-size: 48px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 10px double rgba(255, 255, 255, 0);
+    border-radius: 90%;
+    padding: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    list-style: none;
+    margin-top: 25px;
+    ;
+}
+
+nav {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul {
+    text-decoration: none;
+    color: rgba(233, 15, 135, 0.747);
+    font-size: 24px;
+}
+
+nav:hover {
+    font-size: 40px;
+    border-bottom: 2px solid red;
+}
+
+img {
+    width: 50px;
+}
+
+#cuerpo ::before{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(142, 62, 233);
+    content: '♥';
+}
+
+
+
+.volver ul {
+    text-align: center;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.volver ul li a:hover {
+    font-size: 40px;
+    color: red;
+}
+
+.heart{ 
+    height: 150px;
+    width: 150px;
+    background:  red;
+    position: relative;
+    transform: rotate(-43deg);
+    box-shadow: -20px 20px 150px #f20044;
+    animation: heart  0.5s linear infinite alternate;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.010);
+    }
+    70%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+.contenido{
+    position: fixed;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    top:-50%;
+    border-radius:50%;
+    box-shadow: -20px 20px 150px #f20044; 
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    right:-50%;
+    border-radius:50%;
+    box-shadow: -20px 20px 150px #f20044;
+}
